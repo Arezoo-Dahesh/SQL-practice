@@ -1,0 +1,60 @@
+-- Q1 
+-- Return orders placed in June 2015
+-- Tables involved: TSQLV4 database, Sales.Orders table
+
+-- Desired output:
+orderid     orderdate  custid      empid
+----------- ---------- ----------- -----------
+10555       2015-06-02 71          6
+10556       2015-06-03 73          2
+10557       2015-06-03 44          9
+10558       2015-06-04 4           1
+10559       2015-06-05 7           6
+10560       2015-06-06 25          8
+10561       2015-06-06 24          2
+10562       2015-06-09 66          1
+10563       2015-06-10 67          2
+10564       2015-06-10 65          4
+...
+
+(30 row(s) affected)
+
+
+-- Q2 
+-- Return orders with total value(qty*unitprice) greater than 10000
+-- sorted by total value
+-- Tables involved: Sales.OrderDetails table
+
+-- Desired output:
+orderid     totalvalue
+----------- ---------------------
+10865       17250.00
+11030       16321.90
+10981       15810.00
+10372       12281.20
+10424       11493.20
+10817       11490.70
+10889       11380.00
+10417       11283.20
+10897       10835.24
+10353       10741.60
+10515       10588.50
+10479       10495.60
+10540       10191.70
+10691       10164.80
+
+(14 row(s) affected)
+
+
+-- Q3 
+-- Return the three ship countries with the highest average freight for orders placed in 2015
+-- Tables involved: Sales.Orders table
+
+-- Desired output:
+shipcountry     avgfreight
+--------------- ---------------------
+Austria         178.3642
+Switzerland     117.1775
+Sweden          105.16
+
+(3 row(s) affected)
